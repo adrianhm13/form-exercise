@@ -1,4 +1,3 @@
-import { test } from './form'
+import { email } from './form'
 import './style.css';
 
-test();

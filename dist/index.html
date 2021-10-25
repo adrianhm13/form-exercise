@@ -9,7 +9,17 @@
   <body>
     <div id="content" class="content">
         <div class="form">
-            
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="country">Which country are you?</label>
+            <input type="country" id="country" name="country" pattern="[a-zA-Z]*"required>
+            <label for="zipcode">Enter your zip code</label>
+            <input id="zipcode" name="zip" type="text" pattern="[0-9]*" required>
+            <label for="password">Enter your password: (UpperCase, Lowercase, Number and min 8 characters)</label>
+            <input type="password" id="password" minlength="8"pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+            <label for="password-check">Re-enter your password:</label>
+            <input type="password" id="password-check" minlength="8"pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+
         </div>
     </div>
     <script src="bundle.js"></script>
